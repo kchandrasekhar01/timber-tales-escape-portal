@@ -45,21 +45,16 @@ export const Amenities = () => {
       description: "Relax and unwind in our luxurious hot tub with stunning mountain views"
     },
     {
-      icon: <ChefHat className="w-8 h-8 text-orange-600" />,
-      title: "BBQ Grill",
-      description: "Outdoor grilling station perfect for family barbecues and gatherings"
-    },
-    {
       icon: (
         <svg className="w-8 h-8 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <rect x="2" y="16" width="20" height="6" rx="1" />
-          <path d="M6 12v4" />
-          <path d="M10 12v4" />
-          <path d="M14 12v4" />
-          <path d="M18 12v4" />
-          <path d="M2 8l20 0" />
-          <path d="M7 4l3 4" />
-          <path d="M14 4l3 4" />
+          <rect x="3" y="4" width="18" height="2" rx="1" />
+          <rect x="4" y="6" width="16" height="2" rx="1" />
+          <rect x="2" y="8" width="20" height="12" rx="1" />
+          <rect x="4" y="10" width="16" height="8" rx="1" />
+          <path d="M8 12c1-1 2-2 2-3s-1-2-2-3" />
+          <path d="M12 12c1-1 2-2 2-3s-1-2-2-3" />
+          <path d="M16 12c1-1 2-2 2-3s-1-2-2-3" />
+          <rect x="1" y="18" width="22" height="2" />
         </svg>
       ),
       title: "Fireplaces",
@@ -78,7 +73,7 @@ export const Amenities = () => {
     {
       icon: <Baby className="w-8 h-8 text-pink-600" />,
       title: "Baby Gear",
-      description: "High chairs, pack-n-plays, and other essentials for traveling with little ones"
+      description: "High chair, pack-n-plays, and other essentials for traveling with little ones"
     }
   ];
 
