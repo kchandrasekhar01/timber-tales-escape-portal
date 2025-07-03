@@ -27,15 +27,15 @@ export const Hero = () => {
           Nestled in the Heart of the Smokies
         </h2>
         
-        {/* Bottom Text */}
-        <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2">
+        {/* Bottom Text - moved closer to bottom */}
+        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2">
           <h3 className="text-3xl md:text-5xl font-light tracking-wide text-white">
             Rest Recharge and Reconnect
           </h3>
         </div>
         
         {/* Scroll Indicator */}
-        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ChevronDown className="w-8 h-8 text-white" />
         </div>
       </div>
