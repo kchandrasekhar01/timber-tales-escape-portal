@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
@@ -11,9 +12,6 @@ export const Hero = () => {
           filter: 'brightness(0.8)',
         }}
       />
-      
-      {/* Lighter overlay to keep image more visible */}
-      <div className="absolute inset-0 bg-black/20" />
       
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
