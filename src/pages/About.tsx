@@ -134,7 +134,7 @@ const About = () => {
           </Card>
 
           <div className="text-center mb-16">
-            <Card className="shadow-xl border-0 bg-gradient-to-r from-grey-600 to-grey-700 text-white">
+            <Card className="shadow-xl border-0 bg-gradient-to-r from-black-600 to-black-700 text-white">
               <CardContent className="p-12">
                 <MapPin className="w-16 h-16 mx-auto mb-6 text-grey-200" />
                 <h3 className="text-3xl font-bold mb-4">Perfect Location</h3>
