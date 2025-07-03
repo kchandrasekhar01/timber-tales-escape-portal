@@ -21,17 +21,17 @@ export const BookingCTA = () => {
             <CardContent className="p-10">
               <h3 className="text-3xl font-light mb-8 text-white tracking-wide">Book Your Stay</h3>
               <div className="space-y-6">
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 text-white">
                   <Calendar className="w-6 h-6 text-amber-300" />
-                  <span className="font-light">Check availability and rates</span>
+                  <span className="font-light text-white">Check availability and rates</span>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 text-white">
                   <MapPin className="w-6 h-6 text-amber-300" />
-                  <span className="font-light">Pigeon Forge, TN - Near Dollywood</span>
+                  <span className="font-light text-white">Pigeon Forge, TN - Near Dollywood</span>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 text-white">
                   <Phone className="w-6 h-6 text-amber-300" />
-                  <span className="font-light">Instant booking confirmation</span>
+                  <span className="font-light text-white">Instant booking confirmation</span>
                 </div>
               </div>
               <div className="mt-10 space-y-4">

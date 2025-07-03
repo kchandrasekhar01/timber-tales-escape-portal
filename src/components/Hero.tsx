@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -20,9 +19,13 @@ export const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="w-8 h-8 text-white" />
+        {/* Text at bottom of image */}
+        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-center">
+          <div className="text-4xl md:text-6xl font-light tracking-wider space-y-2">
+            <div>Retreat</div>
+            <div>Unplug</div>
+            <div>Recharge</div>
+          </div>
         </div>
       </div>
     </section>
