@@ -1,6 +1,16 @@
-
 import { Card, CardContent } from "@/components/ui/card";
-import { Utensils, Wifi, Waves, Flame, Baby, Bed, ChefHat } from "lucide-react";
+import { 
+  Utensils, 
+  Wifi, 
+  WashingMachine, 
+  Waves, 
+  Mountain, 
+  ChefHat, 
+  Flame, 
+  Zap, 
+  Bed, 
+  Baby 
+} from "lucide-react";
 
 export const Amenities = () => {
   const amenities = [
@@ -15,7 +25,7 @@ export const Amenities = () => {
       description: "Stay connected with reliable high-speed internet throughout the cabin"
     },
     {
-      icon: <Waves className="w-8 h-8 text-gray-700" />,
+      icon: <WashingMachine className="w-8 h-8 text-gray-700" />,
       title: "Laundry",
       description: "Full-size washer and dryer for your convenience during your stay"
     },
@@ -25,7 +35,7 @@ export const Amenities = () => {
       description: "Private heated indoor pool for year-round swimming enjoyment"
     },
     {
-      icon: <Waves className="w-8 h-8 text-teal-600" />,
+      icon: <Mountain className="w-8 h-8 text-teal-600" />,
       title: "Hot Tub",
       description: "Relax and unwind in our luxurious hot tub with stunning mountain views"
     },
@@ -40,7 +50,7 @@ export const Amenities = () => {
       description: "Cozy fireplaces throughout the cabin for warmth and ambiance"
     },
     {
-      icon: <Flame className="w-8 h-8 text-orange-500" />,
+      icon: <Zap className="w-8 h-8 text-orange-500" />,
       title: "Fire Table",
       description: "Outdoor fire table for evening gatherings under the stars"
     },
