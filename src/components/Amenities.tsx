@@ -126,9 +126,9 @@ export const Amenities = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
           {amenities.map((amenity, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md bg-white">
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md bg-white w-full sm:w-80 lg:w-72">
               <CardContent className="p-8 text-center">
                 <div className="mb-6 flex justify-center">
                   {amenity.icon}
