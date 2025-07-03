@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -13,7 +12,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="text-white">
-              <div className="border-2 border-white px-4 py-2">
+              <div className="border-2 border-white px-6 py-3 bg-black/20 backdrop-blur-sm">
                 <div className="text-sm font-light mb-1 italic">Luxury</div>
                 <div className="text-2xl font-bold tracking-wider">ZARA'S</div>
                 <div className="text-sm font-light italic -mt-1">Timber Tales</div>
