@@ -23,12 +23,15 @@ export const Navigation = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:block flex-1">
-            <div className="flex items-center justify-center space-x-6">
+            <div className="flex items-center justify-center space-x-4">
               <Link to="/" className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors">
                 Home
               </Link>
               <Link to="/about" className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors">
                 Cabin
+              </Link>
+              <Link to="/gallery" className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors">
+                Gallery
               </Link>
               <Link to="/amenities" className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors">
                 Amenities
@@ -73,6 +76,9 @@ export const Navigation = () => {
               <Link to="/about" className="block px-3 py-2 text-lg font-light text-white hover:text-amber-300">
                 Cabin
               </Link>
+              <Link to="/gallery" className="block px-3 py-2 text-lg font-light text-white hover:text-amber-300">
+                Gallery
+              </Link>
               <Link to="/amenities" className="block px-3 py-2 text-lg font-light text-white hover:text-amber-300">
                 Amenities
               </Link>
@@ -94,4 +100,3 @@ export const Navigation = () => {
     </nav>
   );
 };
-

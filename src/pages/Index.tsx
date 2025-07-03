@@ -1,5 +1,4 @@
 
-
 import { Hero } from "@/components/Hero";
 import { Navigation } from "@/components/Navigation";
 import { FeatureSection } from "@/components/FeatureSection";
@@ -15,4 +14,3 @@ const Index = () => {
 };
 
 export default Index;
-
