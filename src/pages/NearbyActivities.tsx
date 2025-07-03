@@ -169,7 +169,7 @@ const NearbyActivities = () => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+      <div className={`grid gap-8 ${title === 'Gatlinburg Activities' ? 'grid-cols-1 lg:grid-cols-2 max-w-5xl mx-auto' : 'grid-cols-1 lg:grid-cols-2 xl:grid-cols-3'}`}>
         {activities.map((section, index) => (
           <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white/70 backdrop-blur-sm">
             <CardHeader className="pb-4">
