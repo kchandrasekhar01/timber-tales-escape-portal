@@ -1,3 +1,4 @@
+
 import { Navigation } from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Wifi, Clock, Car, Baby, RefreshCw, HeadphonesIcon } from "lucide-react";
@@ -75,21 +76,21 @@ const Booking = () => {
           </div>
 
           <div className="mt-16 text-center">
-            <Card className="max-w-2xl mx-auto shadow-xl bg-gradient-to-r from-amber-600 to-amber-700 text-white border-0">
+            <Card className="max-w-2xl mx-auto shadow-xl bg-black text-white border-0">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4">Still Have Questions?</h3>
-                <p className="text-amber-100 mb-6">
+                <p className="text-gray-300 mb-6">
                   We're here to help make your stay perfect. Don't hesitate to reach out!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button 
-                    className="px-6 py-3 bg-white text-amber-700 rounded-lg font-semibold hover:bg-amber-50 transition-colors"
+                    className="px-6 py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                     onClick={() => window.open('tel:+1234567890', '_self')}
                   >
                     Call Us
                   </button>
                   <button 
-                    className="px-6 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-amber-700 transition-colors"
+                    className="px-6 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-black transition-colors"
                     onClick={() => window.open('mailto:host@zarastimbertales.com', '_self')}
                   >
                     Send Email
