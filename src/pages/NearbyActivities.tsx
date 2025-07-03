@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Clock, Users, Star } from "lucide-react";
@@ -158,33 +157,37 @@ const NearbyActivities = () => {
     activities: Array<{ category: string; items: Array<{ name: string; description: string }> }>;
     icon: string;
   }) => (
-    <div className="mb-16">
-      <div className="text-center mb-12">
-        <div className="text-4xl mb-4">{icon}</div>
-        <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-wide">
+    <div className="mb-12 lg:mb-16">
+      <div className="text-center mb-8 lg:mb-12 px-4">
+        <div className="text-3xl lg:text-4xl mb-3 lg:mb-4">{icon}</div>
+        <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3 lg:mb-4 tracking-wide">
           {title}
         </h2>
-        <p className="text-xl text-gray-600 font-light">
+        <p className="text-lg lg:text-xl text-gray-600 font-light max-w-4xl mx-auto">
           {subtitle}
         </p>
       </div>
       
-      <div className={`grid gap-8 ${title === 'Gatlinburg Activities' ? 'grid-cols-1 lg:grid-cols-2 max-w-5xl mx-auto' : 'grid-cols-1 lg:grid-cols-2 xl:grid-cols-3'}`}>
+      <div className={`grid gap-6 lg:gap-8 px-4 ${
+        title === 'Gatlinburg Activities' 
+          ? 'grid-cols-1 lg:grid-cols-2 max-w-5xl mx-auto' 
+          : 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3'
+      }`}>
         {activities.map((section, index) => (
           <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white/70 backdrop-blur-sm">
-            <CardHeader className="pb-4">
-              <CardTitle className="text-xl font-bold text-gray-900 tracking-wide">
+            <CardHeader className="pb-3 lg:pb-4">
+              <CardTitle className="text-lg lg:text-xl font-bold text-gray-900 tracking-wide">
                 {section.category}
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-0">
-              <div className="space-y-4">
+              <div className="space-y-3 lg:space-y-4">
                 {section.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="border-l-4 border-amber-300 pl-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">
+                  <div key={itemIndex} className="border-l-4 border-amber-300 pl-3 lg:pl-4">
+                    <h4 className="font-semibold text-gray-900 mb-1 lg:mb-2 text-sm lg:text-base">
                       {item.name}
                     </h4>
-                    <p className="text-gray-700 text-sm leading-relaxed">
+                    <p className="text-gray-700 text-xs lg:text-sm leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -202,13 +205,13 @@ const NearbyActivities = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 relative bg-black">
+      <section className="pt-20 lg:pt-24 pb-12 lg:pb-16 px-4 relative bg-black">
         <div className="relative z-10 max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-6xl font-bold text-white mb-4 tracking-wide">
+          <div className="text-center mb-8 lg:mb-12">
+            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-3 lg:mb-4 tracking-wide">
               NEARBY ACTIVITIES
             </h1>
-            <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg lg:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
               Explore Pigeon Forge, Gatlinburg, & Sevierville, TN: Your Ultimate Smoky Mountain Adventure Awaits!
             </p>
           </div>
@@ -216,16 +219,16 @@ const NearbyActivities = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 px-4">
+      <section className="py-12 lg:py-16">
         <div className="max-w-7xl mx-auto">
           {/* Introduction */}
-          <div className="text-center mb-16">
-            <p className="text-lg text-gray-700 max-w-5xl mx-auto leading-relaxed font-light">
+          <div className="text-center mb-12 lg:mb-16 px-4">
+            <p className="text-base lg:text-lg text-gray-700 max-w-5xl mx-auto leading-relaxed font-light">
               Welcome to the heart of the <strong>Smoky Mountains</strong>—your perfect destination for family fun, outdoor adventures, and unforgettable experiences! Pigeon Forge, Gatlinburg, and Sevierville offer an array of exciting attractions and activities for everyone. Check out some of the top things to do during your stay!
             </p>
           </div>
 
-          {/* Pigeon Forge Activities */}
+          {/* Activity Sections */}
           <ActivitySection
             title="Pigeon Forge Activities"
             subtitle="Family Fun & Entertainment Capital of the Smokies"
@@ -233,7 +236,6 @@ const NearbyActivities = () => {
             icon="🎡"
           />
 
-          {/* Gatlinburg Activities */}
           <ActivitySection
             title="Gatlinburg Activities"
             subtitle="Gateway to the Great Smoky Mountains National Park"
@@ -241,7 +243,6 @@ const NearbyActivities = () => {
             icon="🏔️"
           />
 
-          {/* Sevierville Activities */}
           <ActivitySection
             title="Sevierville Activities"
             subtitle="Home of Dolly Parton and hidden local gems"
@@ -250,25 +251,25 @@ const NearbyActivities = () => {
           />
 
           {/* Rainy Day Ideas */}
-          <div className="mb-16">
-            <div className="text-center mb-12">
-              <div className="text-4xl mb-4">🌧️</div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-wide">
+          <div className="mb-12 lg:mb-16 px-4">
+            <div className="text-center mb-8 lg:mb-12">
+              <div className="text-3xl lg:text-4xl mb-3 lg:mb-4">🌧️</div>
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3 lg:mb-4 tracking-wide">
                 Rainy Day Ideas
               </h2>
-              <p className="text-xl text-gray-600 font-light">
+              <p className="text-lg lg:text-xl text-gray-600 font-light">
                 Indoor activities for when the weather doesn't cooperate
               </p>
             </div>
             
             <div className="max-w-3xl mx-auto">
               <Card className="shadow-lg border-0 bg-white/70 backdrop-blur-sm">
-                <CardContent className="p-8">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <CardContent className="p-6 lg:p-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                     {rainyDayActivities.map((activity, index) => (
                       <div key={index} className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-amber-300 rounded-full flex-shrink-0"></div>
-                        <span className="text-gray-800 font-medium">{activity}</span>
+                        <span className="text-gray-800 font-medium text-sm lg:text-base">{activity}</span>
                       </div>
                     ))}
                   </div>
@@ -278,22 +279,22 @@ const NearbyActivities = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center">
+          <div className="text-center px-4">
             <Card className="max-w-4xl mx-auto shadow-xl bg-black text-white border-0">
-              <CardContent className="p-12">
-                <h3 className="text-3xl font-bold mb-6 tracking-wide">Ready to Explore?</h3>
-                <p className="text-gray-300 mb-8 text-lg leading-relaxed">
+              <CardContent className="p-8 lg:p-12">
+                <h3 className="text-2xl lg:text-3xl font-bold mb-4 lg:mb-6 tracking-wide">Ready to Explore?</h3>
+                <p className="text-gray-300 mb-6 lg:mb-8 text-base lg:text-lg leading-relaxed">
                   Your adventure in the Smoky Mountains starts at Zara's Timber Tales. Book your stay and discover all these amazing attractions just minutes from your door!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button 
-                    className="px-8 py-4 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors text-lg tracking-wide"
+                    className="px-6 lg:px-8 py-3 lg:py-4 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors text-base lg:text-lg tracking-wide"
                     onClick={() => window.open('https://calendar.google.com', '_blank')}
                   >
                     BOOK YOUR STAY
                   </button>
                   <button 
-                    className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-black transition-colors text-lg tracking-wide"
+                    className="px-6 lg:px-8 py-3 lg:py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-black transition-colors text-base lg:text-lg tracking-wide"
                     onClick={() => window.open('mailto:host@zarastimbertales.com', '_self')}
                   >
                     ASK QUESTIONS
