@@ -51,14 +51,6 @@ export const Gallery = () => {
   return (
     <section className="py-16 px-4 bg-amber-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Photo Gallery
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Take a virtual tour of our stunning mountain retreat and discover the luxury that awaits you
-          </p>
-        </div>
         
         <div className="relative px-12">
           <Carousel className="w-full max-w-5xl mx-auto">
