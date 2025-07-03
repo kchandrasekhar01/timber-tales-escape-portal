@@ -134,9 +134,9 @@ const About = () => {
           </Card>
 
           <div className="text-center mb-16">
-            <Card className="shadow-xl border-0 bg-gradient-to-r from-black-600 to-black-700 text-white">
-              <CardContent className="p-12">
-                <MapPin className="w-16 h-16 mx-auto mb-6 text-grey-200" />
+            <Card className="shadow-xl border-0 bg-black text-white">
+              <CardContent className="p-12 text-white">
+                <MapPin className="w-16 h-16 mx-auto mb-6 text-black-200" />
                 <h3 className="text-3xl font-bold mb-4">Perfect Location</h3>
                 <p className="text-xl mb-6 opacity-90">
                   Located in the heart of Pigeon Forge, you're just minutes away from:
