@@ -4,10 +4,8 @@ import {
   Wifi, 
   WashingMachine, 
   Waves, 
-  Mountain, 
   ChefHat, 
   Flame, 
-  Zap, 
   Bed, 
   Baby 
 } from "lucide-react";
@@ -35,7 +33,14 @@ export const Amenities = () => {
       description: "Private heated indoor pool for year-round swimming enjoyment"
     },
     {
-      icon: <Mountain className="w-8 h-8 text-teal-600" />,
+      icon: (
+        <svg className="w-8 h-8 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <circle cx="12" cy="8" r="6" />
+          <path d="M12 14v8" />
+          <path d="M8 18h8" />
+          <path d="M10 22h4" />
+        </svg>
+      ),
       title: "Hot Tub",
       description: "Relax and unwind in our luxurious hot tub with stunning mountain views"
     },
@@ -45,12 +50,23 @@ export const Amenities = () => {
       description: "Outdoor grilling station perfect for family barbecues and gatherings"
     },
     {
-      icon: <Flame className="w-8 h-8 text-red-600" />,
+      icon: (
+        <svg className="w-8 h-8 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <rect x="2" y="16" width="20" height="6" rx="1" />
+          <path d="M6 12v4" />
+          <path d="M10 12v4" />
+          <path d="M14 12v4" />
+          <path d="M18 12v4" />
+          <path d="M2 8l20 0" />
+          <path d="M7 4l3 4" />
+          <path d="M14 4l3 4" />
+        </svg>
+      ),
       title: "Fireplaces",
       description: "Cozy fireplaces throughout the cabin for warmth and ambiance"
     },
     {
-      icon: <Zap className="w-8 h-8 text-orange-500" />,
+      icon: <Flame className="w-8 h-8 text-orange-500" />,
       title: "Fire Table",
       description: "Outdoor fire table for evening gatherings under the stars"
     },
