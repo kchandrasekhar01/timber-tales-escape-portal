@@ -91,14 +91,7 @@ export const Amenities = () => {
   return (
     <section className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-light text-gray-900 mb-6 tracking-wide">
-            Cabin Amenities
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
-            Everything you need for a perfect mountain getaway, from modern conveniences to luxury comforts
-          </p>
-        </div>
+        
         
         <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-32">
           {amenities.slice(0, 6).map((amenity, index) => (
