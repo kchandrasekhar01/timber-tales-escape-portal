@@ -3,7 +3,6 @@ import { Navigation } from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Wifi, Clock, Car, Baby, RefreshCw, HeadphonesIcon, Calendar, MapPin, Phone } from "lucide-react";
-import { BookingCTA } from "@/components/BookingCTA";
 
 const Booking = () => {
   const faqs = [
@@ -124,7 +123,81 @@ const Booking = () => {
         </div>
       </section>
 
-      <BookingCTA />
+      {/* Ready for Your Mountain Adventure Section */}
+      <section className="py-24 px-4 bg-black text-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-light mb-6 tracking-wide">
+              Ready for Your Mountain Adventure?
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
+              Book your stay at Zara's Timber Tales and create unforgettable memories in the heart of the Smoky Mountains
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <CardContent className="p-10">
+                <h3 className="text-3xl font-light mb-8 text-white tracking-wide">Book Your Stay</h3>
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4 text-white">
+                    <Calendar className="w-6 h-6 text-white" />
+                    <span className="font-light text-white">Check availability and rates</span>
+                  </div>
+                  <div className="flex items-center gap-4 text-white">
+                    <MapPin className="w-6 h-6 text-white" />
+                    <span className="font-light text-white">Pigeon Forge, TN - Near Dollywood</span>
+                  </div>
+                  <div className="flex items-center gap-4 text-white">
+                    <Phone className="w-6 h-6 text-white" />
+                    <span className="font-light text-white">Instant booking confirmation</span>
+                  </div>
+                </div>
+                <div className="mt-10 space-y-4">
+                  <Button 
+                    size="lg" 
+                    className="w-full border-2 border-white bg-transparent text-white hover:bg-white hover:text-black font-light tracking-wider py-4"
+                    onClick={() => window.open('https://calendar.google.com', '_blank')}
+                  >
+                    BOOK NOW
+                  </Button>
+                  <Button 
+                    size="lg" 
+                    variant="outline" 
+                    className="w-full border-white/50 text-white hover:bg-white/10 font-light tracking-wider py-4"
+                  >
+                    Contact Host
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <div className="space-y-8">
+              <div className="text-center md:text-left">
+                <h3 className="text-4xl font-light mb-8 tracking-wide">Why Choose Zara's Timber Tales?</h3>
+                <ul className="space-y-4 text-lg font-light">
+                  <li className="flex items-start gap-4">
+                    <span className="text-white text-2xl">✓</span>
+                    <span>Premium location near top attractions</span>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="text-white text-2xl">✓</span>
+                    <span>Luxury amenities for ultimate comfort</span>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="text-white text-2xl">✓</span>
+                    <span>Pet-friendly mountain retreat</span>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="text-white text-2xl">✓</span>
+                    <span>Perfect for families and groups</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
