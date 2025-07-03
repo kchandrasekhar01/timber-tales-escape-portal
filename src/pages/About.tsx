@@ -26,15 +26,6 @@ const About = () => {
       {/* Main Content Section - matching gallery page background */}
       <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              About Zara's Timber Tales
-            </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Our premium 5-bedroom, 7-bathroom retreat offers an unparalleled vacation experience with world-class amenities and breathtaking mountain views.
-            </p>
-          </div>
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img 
