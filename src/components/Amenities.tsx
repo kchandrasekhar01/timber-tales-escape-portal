@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   Utensils, 
@@ -35,10 +36,14 @@ export const Amenities = () => {
     {
       icon: (
         <svg className="w-8 h-8 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <circle cx="12" cy="8" r="6" />
-          <path d="M12 14v8" />
-          <path d="M8 18h8" />
-          <path d="M10 22h4" />
+          <circle cx="8" cy="12" r="3" />
+          <circle cx="16" cy="12" r="3" />
+          <path d="M12 3v6" />
+          <path d="M12 15v6" />
+          <path d="M3 12h6" />
+          <path d="M15 12h6" />
+          <rect x="6" y="14" width="12" height="6" rx="2" />
+          <path d="M8 17h8" />
         </svg>
       ),
       title: "Hot Tub",
@@ -59,6 +64,11 @@ export const Amenities = () => {
       ),
       title: "Fireplaces",
       description: "Cozy fireplaces throughout the cabin for warmth and ambiance"
+    },
+    {
+      icon: <ChefHat className="w-8 h-8 text-orange-600" />,
+      title: "BBQ Grill",
+      description: "Outdoor grilling station perfect for family barbecues and gatherings"
     },
     {
       icon: <Flame className="w-8 h-8 text-orange-500" />,
