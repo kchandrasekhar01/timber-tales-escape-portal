@@ -47,28 +47,28 @@ export const Amenities = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-white">
+    <section className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-light text-gray-900 mb-6 tracking-wide">
             Luxury Amenities
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
             Experience the perfect blend of comfort and adventure with our premium amenities designed for unforgettable mountain getaways
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {amenities.map((amenity, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
-              <CardContent className="p-6 text-center">
-                <div className="mb-4 flex justify-center">
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md bg-white">
+              <CardContent className="p-8 text-center">
+                <div className="mb-6 flex justify-center">
                   {amenity.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wide">
                   {amenity.title}
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 font-light leading-relaxed">
                   {amenity.description}
                 </p>
               </CardContent>

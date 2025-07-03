@@ -4,12 +4,14 @@ import { Amenities } from "@/components/Amenities";
 import { Gallery } from "@/components/Gallery";
 import { BookingCTA } from "@/components/BookingCTA";
 import { Navigation } from "@/components/Navigation";
+import { FeatureSection } from "@/components/FeatureSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-amber-50">
+    <div className="min-h-screen bg-white">
       <Navigation />
       <Hero />
+      <FeatureSection />
       <Amenities />
       <Gallery />
       <BookingCTA />
