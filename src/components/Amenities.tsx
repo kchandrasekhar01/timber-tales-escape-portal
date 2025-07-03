@@ -34,7 +34,7 @@ export const Amenities = () => {
     },
     {
       icon: (
-        <svg className="w-10 h-10 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <svg className="w-15 h-15 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <rect x="2" y="14" width="20" height="6" rx="2" fill="none" />
           <rect x="4" y="16" width="2" height="2" fill="currentColor" />
           <rect x="7" y="16" width="2" height="2" fill="currentColor" />
