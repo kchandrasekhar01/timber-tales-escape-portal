@@ -34,18 +34,11 @@ export const Amenities = () => {
     },
     {
       icon: (
-        <svg className="w-15 h-15 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <rect x="2" y="14" width="20" height="6" rx="2" fill="none" />
-          <rect x="4" y="16" width="2" height="2" fill="currentColor" />
-          <rect x="7" y="16" width="2" height="2" fill="currentColor" />
-          <rect x="10" y="16" width="2" height="2" fill="currentColor" />
-          <rect x="13" y="16" width="2" height="2" fill="currentColor" />
-          <rect x="16" y="16" width="2" height="2" fill="currentColor" />
-          <path d="M6 14v-2c0-1 0.5-2 2-2h8c1.5 0 2 1 2 2v2" fill="none" />
-          <path d="M8 8c0-0.5 0.2-1 0.5-1s0.5 0.5 0.5 1" fill="none" />
-          <path d="M11 8c0-0.5 0.2-1 0.5-1s0.5 0.5 0.5 1" fill="none" />
-          <path d="M14 8c0-0.5 0.2-1 0.5-1s0.5 0.5 0.5 1" fill="none" />
-        </svg>
+        <img 
+          src="/lovable-uploads/27cf402d-e1c2-4364-a092-7a7d2bedea71.png" 
+          alt="Hot Tub" 
+          className="w-8 h-8"
+        />
       ),
       title: "Hot Tub",
       description: "Relax and unwind in our luxurious hot tub with stunning mountain views"
