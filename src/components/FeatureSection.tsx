@@ -4,13 +4,13 @@ import { Card, CardContent } from "@/components/ui/card";
 export const FeatureSection = () => {
   const features = [
     {
-      title: "RETREAT"
+      title: "Retreat"
     },
     {
-      title: "RECONNECT"
+      title: "Reconnect"
     },
     {
-      title: "RECHARGE"
+      title: "Recharge"
     }
   ];
 
