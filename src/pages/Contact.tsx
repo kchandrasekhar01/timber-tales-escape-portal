@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="relative z-10 max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-6xl font-bold text-white mb-4 tracking-wide">
-              CONTACT US
+              GET IN TOUCH
             </h1>
             <p className="text-xl text-white/90">
               We're here to help make your stay at Zara's Timber Tales perfect
@@ -24,16 +24,6 @@ const Contact = () => {
 
       {/* Contact Cards Section */}
       <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              Get In Touch
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Multiple ways to reach us for all your questions and needs
-            </p>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white/70 backdrop-blur-sm">
               <CardContent className="p-8">
@@ -44,7 +34,7 @@ const Contact = () => {
                 <p className="text-gray-700 mb-4">
                   For immediate assistance or urgent matters during your stay
                 </p>
-                <p className="text-lg font-semibold text-gray-900">+1 (234) 567-8900</p>
+                <p className="text-lg font-semibold text-gray-900">+1 (510) 304-6560</p>
                 <p className="text-sm text-gray-600">Available 24/7</p>
               </CardContent>
             </Card>
@@ -58,7 +48,7 @@ const Contact = () => {
                 <p className="text-gray-700 mb-4">
                   For general inquiries, bookings, or detailed questions
                 </p>
-                <p className="text-lg font-semibold text-gray-900">host@zarastimbertales.com</p>
+                <p className="text-lg font-semibold text-gray-900">ZarasTimberTales@edificepmg.com</p>
                 <p className="text-sm text-gray-600">We typically respond within 2-4 hours</p>
               </CardContent>
             </Card>
@@ -102,13 +92,13 @@ const Contact = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button 
                     className="px-6 py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-                    onClick={() => window.open('tel:+1234567890', '_self')}
+                    onClick={() => window.open('tel:+15103046560', '_self')}
                   >
                     Call Us
                   </button>
                   <button 
                     className="px-6 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-black transition-colors"
-                    onClick={() => window.open('mailto:host@zarastimbertales.com', '_self')}
+                    onClick={() => window.open('mailto:zarastimbertales@edificepmg.com', '_self')}
                   >
                     Send Email
                   </button>
