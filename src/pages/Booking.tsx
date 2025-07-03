@@ -1,7 +1,9 @@
 
+
 import { Navigation } from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Wifi, Clock, Car, Baby, RefreshCw, HeadphonesIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Wifi, Clock, Car, Baby, RefreshCw, HeadphonesIcon, Calendar, MapPin, Phone } from "lucide-react";
 
 const Booking = () => {
   const faqs = [
@@ -34,13 +36,14 @@ const Booking = () => {
       icon: <img src="/lovable-uploads/9fe82f77-918a-49bc-a992-2e51799dde16.png" alt="Pet Friendly" className="w-6 h-6" />,
       question: "Is the cabin pet-friendly?",
       answer: "Yes, we welcome up to 2 pets under 50 lbs. There is a small pet fee for each pet. Service animals stay free of charge. We also offer pet-friendly amenities to make your furry friends feel right at home."
-    },
-    {
-      icon: <HeadphonesIcon className="w-6 h-6 text-black" />,
-      question: "What happens if I encounter an issue during my stay?",
-      answer: "If you encounter any issues during your stay, please don't hesitate to contact us. We provide 24/7 customer support, and we'll do our best to resolve any issues quickly so you can continue enjoying your time at the cabin."
     }
   ];
+
+  const lastFaq = {
+    icon: <HeadphonesIcon className="w-6 h-6 text-black" />,
+    question: "What happens if I encounter an issue during my stay?",
+    answer: "If you encounter any issues during your stay, please don't hesitate to contact us. We provide 24/7 customer support, and we'll do our best to resolve any issues quickly so you can continue enjoying your time at the cabin."
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50">
@@ -75,6 +78,25 @@ const Booking = () => {
             ))}
           </div>
 
+          {/* Centered last FAQ card */}
+          <div className="flex justify-center mt-8">
+            <div className="w-full max-w-md lg:max-w-lg">
+              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white/70 backdrop-blur-sm">
+                <CardHeader className="pb-4">
+                  <CardTitle className="flex items-start gap-4 text-lg font-semibold text-gray-900">
+                    <div className="flex-shrink-0 mt-1">
+                      {lastFaq.icon}
+                    </div>
+                    <span className="leading-tight">{lastFaq.question}</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0 pl-14">
+                  <p className="text-gray-700 leading-relaxed">{lastFaq.answer}</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
           <div className="mt-16 text-center">
             <Card className="max-w-2xl mx-auto shadow-xl bg-black text-white border-0">
               <CardContent className="p-8">
@@ -101,8 +123,85 @@ const Booking = () => {
           </div>
         </div>
       </section>
+
+      {/* Ready for Your Mountain Adventure section moved from home page */}
+      <section className="py-24 px-4 bg-gradient-to-br from-gray-900 to-black text-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-light mb-6 tracking-wide">
+              Ready for Your Mountain Adventure?
+            </h2>
+            <p className="text-xl opacity-90 max-w-3xl mx-auto font-light leading-relaxed">
+              Book your stay at Zara's Timber Tales and create unforgettable memories in the heart of the Smoky Mountains
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <CardContent className="p-10">
+                <h3 className="text-3xl font-light mb-8 text-white tracking-wide">Book Your Stay</h3>
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4 text-white">
+                    <Calendar className="w-6 h-6 text-amber-300" />
+                    <span className="font-light text-white">Check availability and rates</span>
+                  </div>
+                  <div className="flex items-center gap-4 text-white">
+                    <MapPin className="w-6 h-6 text-amber-300" />
+                    <span className="font-light text-white">Pigeon Forge, TN - Near Dollywood</span>
+                  </div>
+                  <div className="flex items-center gap-4 text-white">
+                    <Phone className="w-6 h-6 text-amber-300" />
+                    <span className="font-light text-white">Instant booking confirmation</span>
+                  </div>
+                </div>
+                <div className="mt-10 space-y-4">
+                  <Button 
+                    size="lg" 
+                    className="w-full border-2 border-white bg-transparent text-white hover:bg-white hover:text-black font-light tracking-wider py-4"
+                    onClick={() => window.open('https://calendar.google.com', '_blank')}
+                  >
+                    BOOK NOW
+                  </Button>
+                  <Button 
+                    size="lg" 
+                    variant="outline" 
+                    className="w-full border-white/50 text-white hover:bg-white/10 font-light tracking-wider py-4"
+                  >
+                    Contact Host
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <div className="space-y-8">
+              <div className="text-center md:text-left">
+                <h3 className="text-4xl font-light mb-8 tracking-wide">Why Choose Zara's Timber Tales?</h3>
+                <ul className="space-y-4 text-lg font-light">
+                  <li className="flex items-start gap-4">
+                    <span className="text-amber-300 text-2xl">✓</span>
+                    <span>Premium location near top attractions</span>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="text-amber-300 text-2xl">✓</span>
+                    <span>Luxury amenities for ultimate comfort</span>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="text-amber-300 text-2xl">✓</span>
+                    <span>Pet-friendly mountain retreat</span>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="text-amber-300 text-2xl">✓</span>
+                    <span>Perfect for families and groups</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
 
 export default Booking;
+

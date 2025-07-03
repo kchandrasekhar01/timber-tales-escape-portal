@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -38,9 +39,9 @@ export const Navigation = () => {
               <span className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors cursor-pointer">
                 Nearby Activities
               </span>
-              <span className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors cursor-pointer">
+              <Link to="/contact" className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors">
                 Contact
-              </span>
+              </Link>
             </div>
           </div>
 
@@ -78,6 +79,9 @@ export const Navigation = () => {
               <Link to="/booking" className="block px-3 py-2 text-lg font-light text-white hover:text-amber-300">
                 FAQ
               </Link>
+              <Link to="/contact" className="block px-3 py-2 text-lg font-light text-white hover:text-amber-300">
+                Contact
+              </Link>
               <div className="px-3 py-2">
                 <Button className="w-full border-2 border-white bg-transparent text-white hover:bg-white hover:text-black font-light tracking-wider">
                   BOOK NOW
@@ -90,3 +94,4 @@ export const Navigation = () => {
     </nav>
   );
 };
+

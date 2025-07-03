@@ -1,6 +1,6 @@
 
+
 import { Hero } from "@/components/Hero";
-import { BookingCTA } from "@/components/BookingCTA";
 import { Navigation } from "@/components/Navigation";
 import { FeatureSection } from "@/components/FeatureSection";
 
@@ -10,9 +10,9 @@ const Index = () => {
       <Navigation />
       <Hero />
       <FeatureSection />
-      <BookingCTA />
     </div>
   );
 };
 
 export default Index;
+
