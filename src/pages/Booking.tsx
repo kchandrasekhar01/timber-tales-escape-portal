@@ -64,14 +64,7 @@ const Booking = () => {
       {/* FAQ Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Everything you need to know about your stay at Zara's Timber Tales
-            </p>
-          </div>
+          
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {faqs.map((faq, index) => (
