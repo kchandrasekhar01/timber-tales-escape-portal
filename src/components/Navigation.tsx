@@ -22,8 +22,8 @@ export const Navigation = () => {
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          <div className="hidden md:block flex-1">
+            <div className="flex items-center justify-center space-x-6">
               <Link to="/" className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors">
                 Home
               </Link>
@@ -42,10 +42,13 @@ export const Navigation = () => {
               <span className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors cursor-pointer">
                 Contact
               </span>
-              <Button className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-black px-6 py-2 text-base font-light tracking-wider transition-all">
-                BOOK NOW
-              </Button>
             </div>
+          </div>
+
+          <div className="hidden md:block">
+            <Button className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-black px-6 py-2 text-base font-light tracking-wider transition-all">
+              BOOK NOW
+            </Button>
           </div>
 
           {/* Mobile menu button */}
