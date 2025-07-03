@@ -1,5 +1,5 @@
-
 import { Navigation } from "@/components/Navigation";
+import { Gallery } from "@/components/Gallery";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Users, Home, Heart, Wifi, Car, Utensils, Waves } from "lucide-react";
 
@@ -87,7 +87,7 @@ const About = () => {
             </Card>
           </div>
 
-          <Card className="bg-white shadow-xl">
+          <Card className="bg-white shadow-xl mb-16">
             <CardHeader>
               <CardTitle className="text-3xl text-center text-gray-900">
                 Premium Amenities & Features
@@ -118,7 +118,11 @@ const About = () => {
             </CardContent>
           </Card>
 
-          <div className="mt-16 text-center">
+          <div className="mb-16">
+            <Gallery />
+          </div>
+
+          <div className="text-center">
             <Card className="bg-gradient-to-r from-amber-600 to-amber-700 text-white">
               <CardContent className="p-12">
                 <MapPin className="w-16 h-16 mx-auto mb-6 text-amber-200" />
