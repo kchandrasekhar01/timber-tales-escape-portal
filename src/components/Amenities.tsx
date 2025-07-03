@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   Utensils, 
@@ -88,7 +89,7 @@ export const Amenities = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-24">
           {amenities.map((amenity, index) => (
             <div key={index} className="text-center">
               <div className="mb-4 flex justify-center">
@@ -101,7 +102,7 @@ export const Amenities = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {amenities.map((amenity, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md bg-white">
               <CardContent className="p-8 text-center">
