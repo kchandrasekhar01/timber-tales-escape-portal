@@ -53,17 +53,11 @@ export const Amenities = () => {
     },
     {
       icon: (
-        <svg className="w-8 h-8 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <rect x="3" y="6" width="18" height="12" rx="2" />
-          <rect x="5" y="8" width="14" height="8" rx="1" />
-          <path d="M7 16h2v2H7z" />
-          <path d="M15 16h2v2h-2z" />
-          <path d="M9 3v3" />
-          <path d="M15 3v3" />
-          <path d="M6 10h12" />
-          <path d="M6 12h12" />
-          <path d="M6 14h12" />
-        </svg>
+        <img 
+          src="/lovable-uploads/adef4557-1abe-427d-86c9-7a3dd6697f8c.png" 
+          alt="Fireplace" 
+          className="w-8 h-8"
+        />
       ),
       title: "Fireplaces",
       description: "Cozy fireplaces throughout the cabin for warmth and ambiance"
