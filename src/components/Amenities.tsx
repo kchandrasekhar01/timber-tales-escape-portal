@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   Utensils, 
@@ -29,21 +28,27 @@ export const Amenities = () => {
       description: "Full-size washer and dryer for your convenience during your stay"
     },
     {
-      icon: <Waves className="w-8 h-8 text-blue-600" />,
+      icon: <Waves className="w-8 h-8 text-gray-700" />,
       title: "Heated Pool",
       description: "Private heated indoor pool for year-round swimming enjoyment"
     },
     {
       icon: (
-        <svg className="w-8 h-8 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <circle cx="8" cy="12" r="3" />
-          <circle cx="16" cy="12" r="3" />
-          <path d="M12 3v6" />
-          <path d="M12 15v6" />
-          <path d="M3 12h6" />
-          <path d="M15 12h6" />
-          <rect x="6" y="14" width="12" height="6" rx="2" />
-          <path d="M8 17h8" />
+        <svg className="w-8 h-8 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <ellipse cx="12" cy="16" rx="8" ry="3" />
+          <ellipse cx="12" cy="14" rx="6" ry="2" />
+          <path d="M4 14v2" />
+          <path d="M6 14v2" />
+          <path d="M8 14v2" />
+          <path d="M10 14v2" />
+          <path d="M14 14v2" />
+          <path d="M16 14v2" />
+          <path d="M18 14v2" />
+          <path d="M20 14v2" />
+          <path d="M9 6c0.5-1 1.5-2 3-2s2.5 1 3 2" />
+          <path d="M10 8c0.3-0.6 0.8-1 1.5-1s1.2 0.4 1.5 1" />
+          <path d="M11.5 10c0.2-0.3 0.4-0.5 0.5-0.5s0.3 0.2 0.5 0.5" />
+          <rect x="18" y="17" width="3" height="2" rx="0.5" />
         </svg>
       ),
       title: "Hot Tub",
@@ -51,37 +56,38 @@ export const Amenities = () => {
     },
     {
       icon: (
-        <svg className="w-8 h-8 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <rect x="3" y="4" width="18" height="2" rx="1" />
-          <rect x="4" y="6" width="16" height="2" rx="1" />
-          <rect x="2" y="8" width="20" height="12" rx="1" />
-          <rect x="4" y="10" width="16" height="8" rx="1" />
-          <path d="M8 12c1-1 2-2 2-3s-1-2-2-3" />
-          <path d="M12 12c1-1 2-2 2-3s-1-2-2-3" />
-          <path d="M16 12c1-1 2-2 2-3s-1-2-2-3" />
-          <rect x="1" y="18" width="22" height="2" />
+        <svg className="w-8 h-8 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <rect x="3" y="6" width="18" height="12" rx="2" />
+          <rect x="5" y="8" width="14" height="8" rx="1" />
+          <path d="M7 16h2v2H7z" />
+          <path d="M15 16h2v2h-2z" />
+          <path d="M9 3v3" />
+          <path d="M15 3v3" />
+          <path d="M6 10h12" />
+          <path d="M6 12h12" />
+          <path d="M6 14h12" />
         </svg>
       ),
       title: "Fireplaces",
       description: "Cozy fireplaces throughout the cabin for warmth and ambiance"
     },
     {
-      icon: <ChefHat className="w-8 h-8 text-orange-600" />,
+      icon: <ChefHat className="w-8 h-8 text-gray-700" />,
       title: "BBQ Grill",
       description: "Outdoor grilling station perfect for family barbecues and gatherings"
     },
     {
-      icon: <Flame className="w-8 h-8 text-orange-500" />,
+      icon: <Flame className="w-8 h-8 text-gray-700" />,
       title: "Fire Table",
       description: "Outdoor fire table for evening gatherings under the stars"
     },
     {
-      icon: <Bed className="w-8 h-8 text-purple-600" />,
+      icon: <Bed className="w-8 h-8 text-gray-700" />,
       title: "Linens",
       description: "Premium quality linens and towels provided for all guests"
     },
     {
-      icon: <Baby className="w-8 h-8 text-pink-600" />,
+      icon: <Baby className="w-8 h-8 text-gray-700" />,
       title: "Baby Gear",
       description: "High chair, pack-n-plays, and other essentials for traveling with little ones"
     }
