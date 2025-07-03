@@ -39,9 +39,9 @@ export const Navigation = () => {
               <Link to="/booking" className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors">
                 FAQ
               </Link>
-              <span className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors cursor-pointer">
+              <Link to="/nearby-activities" className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors">
                 Nearby Activities
-              </span>
+              </Link>
               <Link to="/contact" className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors">
                 Contact
               </Link>
@@ -84,6 +84,9 @@ export const Navigation = () => {
               </Link>
               <Link to="/booking" className="block px-3 py-2 text-lg font-light text-white hover:text-amber-300">
                 FAQ
+              </Link>
+              <Link to="/nearby-activities" className="block px-3 py-2 text-lg font-light text-white hover:text-amber-300">
+                Nearby Activities
               </Link>
               <Link to="/contact" className="block px-3 py-2 text-lg font-light text-white hover:text-amber-300">
                 Contact

@@ -10,6 +10,7 @@ import Booking from "./pages/Booking";
 import Amenities from "./pages/Amenities";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
+import NearbyActivities from "./pages/NearbyActivities";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/amenities" element={<Amenities />} />
+          <Route path="/nearby-activities" element={<NearbyActivities />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
