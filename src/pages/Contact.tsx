@@ -8,22 +8,37 @@ const Contact = () => {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50">
       <Navigation />
       
-      <section className="pt-24 pb-16 px-4">
+      {/* Hero Section - matching Booking page style */}
+      <section className="pt-24 pb-16 px-4 relative bg-black">
+        <div className="relative z-10 max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h1 className="text-6xl font-bold text-white mb-4 tracking-wide">
+              CONTACT US
+            </h1>
+            <p className="text-xl text-white/90">
+              We're here to help make your stay at Zara's Timber Tales perfect
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Cards Section */}
+      <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Contact Us
-            </h1>
+            <h2 className="text-5xl font-bold text-gray-900 mb-6">
+              Get In Touch
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're here to help make your stay at Zara's Timber Tales perfect
+              Multiple ways to reach us for all your questions and needs
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <Card className="shadow-lg border-0 bg-white/70 backdrop-blur-sm">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white/70 backdrop-blur-sm">
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
-                  <Phone className="w-8 h-8 text-amber-600" />
+                  <Phone className="w-8 h-8 text-black" />
                   <h3 className="text-2xl font-semibold text-gray-900">Call Us</h3>
                 </div>
                 <p className="text-gray-700 mb-4">
@@ -34,10 +49,10 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-lg border-0 bg-white/70 backdrop-blur-sm">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white/70 backdrop-blur-sm">
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
-                  <Mail className="w-8 h-8 text-amber-600" />
+                  <Mail className="w-8 h-8 text-black" />
                   <h3 className="text-2xl font-semibold text-gray-900">Email Us</h3>
                 </div>
                 <p className="text-gray-700 mb-4">
@@ -48,10 +63,10 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-lg border-0 bg-white/70 backdrop-blur-sm">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white/70 backdrop-blur-sm">
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
-                  <MapPin className="w-8 h-8 text-amber-600" />
+                  <MapPin className="w-8 h-8 text-black" />
                   <h3 className="text-2xl font-semibold text-gray-900">Location</h3>
                 </div>
                 <p className="text-gray-700 mb-4">
@@ -62,10 +77,10 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-lg border-0 bg-white/70 backdrop-blur-sm">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white/70 backdrop-blur-sm">
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
-                  <Clock className="w-8 h-8 text-amber-600" />
+                  <Clock className="w-8 h-8 text-black" />
                   <h3 className="text-2xl font-semibold text-gray-900">Check-in Hours</h3>
                 </div>
                 <p className="text-gray-700 mb-4">
@@ -108,4 +123,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
