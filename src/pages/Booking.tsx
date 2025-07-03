@@ -182,7 +182,7 @@ const Booking = () => {
                   <Checkbox
                     id="pets"
                     checked={petsAllowed}
-                    onCheckedChange={setPetsAllowed}
+                    onCheckedChange={(checked) => setPetsAllowed(checked === true)}
                   />
                   <Label htmlFor="pets" className="text-sm font-medium text-gray-700">
                     Pets allowed
