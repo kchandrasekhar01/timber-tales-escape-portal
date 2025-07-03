@@ -74,6 +74,17 @@ export const Amenities = () => {
       icon: <Baby className="w-8 h-8 text-black" />,
       title: "Baby Gear",
       description: "High chair, pack-n-plays, and other essentials for traveling with little ones"
+    },
+    {
+      icon: (
+        <img 
+          src="/lovable-uploads/0c9e6ead-1936-4bed-93a1-c93f7f010357.png" 
+          alt="Bath Amenities" 
+          className="w-8 h-8"
+        />
+      ),
+      title: "Bath Amenities",
+      description: "Premium toiletries and bath essentials provided for your comfort and convenience"
     }
   ];
 
@@ -89,8 +100,8 @@ export const Amenities = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-24">
-          {amenities.map((amenity, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-32">
+          {amenities.slice(0, 6).map((amenity, index) => (
             <div key={index} className="text-center">
               <div className="mb-4 flex justify-center">
                 {amenity.icon}
@@ -102,7 +113,20 @@ export const Amenities = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-24">
+          {amenities.slice(6).map((amenity, index) => (
+            <div key={index + 6} className="text-center">
+              <div className="mb-4 flex justify-center">
+                {amenity.icon}
+              </div>
+              <h3 className="text-lg font-light text-gray-900 tracking-wide">
+                {amenity.title}
+              </h3>
+            </div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {amenities.map((amenity, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md bg-white">
               <CardContent className="p-8 text-center">
