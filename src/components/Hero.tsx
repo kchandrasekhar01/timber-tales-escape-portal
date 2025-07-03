@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
@@ -8,13 +7,13 @@ export const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/lovable-uploads/1b1da941-4696-4fbb-b6aa-ecb0204e824e.png')`,
-          filter: 'brightness(0.6)',
+          backgroundImage: `url('/lovable-uploads/7fd06217-d630-4aca-8cfc-2e24f3665b2c.png')`,
+          filter: 'brightness(0.8)',
         }}
       />
       
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/30" />
+      {/* Lighter overlay to keep image more visible */}
+      <div className="absolute inset-0 bg-black/20" />
       
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
