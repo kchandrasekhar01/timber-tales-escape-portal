@@ -34,7 +34,7 @@ export const Amenities = () => {
     },
     {
       icon: (
-        <svg className="w-8 h-8 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <svg className="w-10 h-10 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <ellipse cx="12" cy="16" rx="8" ry="3" />
           <ellipse cx="12" cy="14" rx="6" ry="2" />
           <path d="M4 14v2" />
