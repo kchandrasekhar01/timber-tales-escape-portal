@@ -2,9 +2,22 @@
 import { Navigation } from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Wifi, Clock, Car, Baby, RefreshCw, HeadphonesIcon, Calendar, MapPin, Phone } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Calendar } from "@/components/ui/calendar";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Wifi, Clock, Car, Baby, RefreshCw, HeadphonesIcon, Calendar as CalendarIcon, MapPin, Phone, Users } from "lucide-react";
+import { useState } from "react";
+import { format } from "date-fns";
+import { cn } from "@/lib/utils";
 
 const Booking = () => {
+  const [checkInDate, setCheckInDate] = useState<Date>();
+  const [checkOutDate, setCheckOutDate] = useState<Date>();
+  const [guests, setGuests] = useState(1);
+  const [petsAllowed, setPetsAllowed] = useState(false);
+
   const faqs = [
     {
       icon: <Wifi className="w-6 h-6 text-black" />,
@@ -48,12 +61,146 @@ const Booking = () => {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50">
       <Navigation />
       
-      <section className="pt-24 pb-16 px-4">
+      {/* Hero Section with Booking Portal */}
+      <section className="pt-24 pb-16 px-4 relative">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/e488a946-dd2e-453d-a5f9-27f33be14854.png')`
+          }}
+        />
+        <div className="relative z-10 max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h1 className="text-6xl font-bold text-white mb-4 tracking-wide">
+              SEARCH ALL CABINS
+            </h1>
+            <p className="text-xl text-white/90">
+              Pigeon Forge, TN
+            </p>
+          </div>
+
+          {/* Booking Portal */}
+          <Card className="max-w-4xl mx-auto bg-white/95 backdrop-blur-sm shadow-2xl">
+            <CardContent className="p-8">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-end">
+                {/* Check-in Date */}
+                <div className="space-y-2">
+                  <Label htmlFor="checkin" className="text-sm font-medium text-gray-700">
+                    Check-in
+                  </Label>
+                  <Popover>
+                    <PopoverTrigger asChild>
+                      <Button
+                        variant="outline"
+                        className={cn(
+                          "w-full justify-start text-left font-normal h-12",
+                          !checkInDate && "text-muted-foreground"
+                        )}
+                      >
+                        <CalendarIcon className="mr-2 h-4 w-4" />
+                        {checkInDate ? format(checkInDate, "MMM dd") : "Select date"}
+                      </Button>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-auto p-0" align="start">
+                      <Calendar
+                        mode="single"
+                        selected={checkInDate}
+                        onSelect={setCheckInDate}
+                        initialFocus
+                        className="pointer-events-auto"
+                      />
+                    </PopoverContent>
+                  </Popover>
+                </div>
+
+                {/* Check-out Date */}
+                <div className="space-y-2">
+                  <Label htmlFor="checkout" className="text-sm font-medium text-gray-700">
+                    Check-out
+                  </Label>
+                  <Popover>
+                    <PopoverTrigger asChild>
+                      <Button
+                        variant="outline"
+                        className={cn(
+                          "w-full justify-start text-left font-normal h-12",
+                          !checkOutDate && "text-muted-foreground"
+                        )}
+                      >
+                        <CalendarIcon className="mr-2 h-4 w-4" />
+                        {checkOutDate ? format(checkOutDate, "MMM dd") : "Select date"}
+                      </Button>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-auto p-0" align="start">
+                      <Calendar
+                        mode="single"
+                        selected={checkOutDate}
+                        onSelect={setCheckOutDate}
+                        initialFocus
+                        className="pointer-events-auto"
+                      />
+                    </PopoverContent>
+                  </Popover>
+                </div>
+
+                {/* Guests */}
+                <div className="space-y-2">
+                  <Label htmlFor="guests" className="text-sm font-medium text-gray-700">
+                    Guests
+                  </Label>
+                  <div className="relative">
+                    <Users className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
+                    <Input
+                      id="guests"
+                      type="number"
+                      min="1"
+                      max="12"
+                      value={guests}
+                      onChange={(e) => setGuests(parseInt(e.target.value) || 1)}
+                      className="pl-10 h-12"
+                    />
+                  </div>
+                </div>
+
+                {/* Search Button */}
+                <div>
+                  <Button 
+                    size="lg" 
+                    className="w-full bg-green-700 hover:bg-green-800 text-white font-semibold h-12"
+                    onClick={() => {
+                      console.log('Search clicked', { checkInDate, checkOutDate, guests, petsAllowed });
+                    }}
+                  >
+                    Search
+                  </Button>
+                </div>
+              </div>
+
+              {/* Pets Allowed Checkbox */}
+              <div className="mt-6 flex justify-center">
+                <div className="flex items-center space-x-2 bg-white rounded-full px-6 py-2 shadow-md">
+                  <Checkbox
+                    id="pets"
+                    checked={petsAllowed}
+                    onCheckedChange={setPetsAllowed}
+                  />
+                  <Label htmlFor="pets" className="text-sm font-medium text-gray-700">
+                    Pets allowed
+                  </Label>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-5xl font-bold text-gray-900 mb-6">
               Frequently Asked Questions
-            </h1>
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Everything you need to know about your stay at Zara's Timber Tales
             </p>
@@ -141,7 +288,7 @@ const Booking = () => {
                 <h3 className="text-3xl font-light mb-8 text-white tracking-wide">Book Your Stay</h3>
                 <div className="space-y-6">
                   <div className="flex items-center gap-4 text-white">
-                    <Calendar className="w-6 h-6 text-white" />
+                    <CalendarIcon className="w-6 h-6 text-white" />
                     <span className="font-light text-white">Check availability and rates</span>
                   </div>
                   <div className="flex items-center gap-4 text-white">
