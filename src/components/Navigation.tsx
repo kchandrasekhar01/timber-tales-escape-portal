@@ -33,18 +33,9 @@ export const Navigation = () => {
               <Link to="/amenities" className="text-white hover:text-amber-300 px-3 py-2 text-sm font-light tracking-wide transition-colors">
                 Amenities
               </Link>
-              <Link to="/gallery" className="text-white hover:text-amber-300 px-3 py-2 text-sm font-light tracking-wide transition-colors">
-                About
-              </Link>
               <Link to="/booking" className="text-white hover:text-amber-300 px-3 py-2 text-sm font-light tracking-wide transition-colors">
                 FAQ
               </Link>
-              <span className="text-white hover:text-amber-300 px-3 py-2 text-sm font-light tracking-wide transition-colors cursor-pointer">
-                Extras
-              </span>
-              <span className="text-white hover:text-amber-300 px-3 py-2 text-sm font-light tracking-wide transition-colors cursor-pointer">
-                Gift Cards
-              </span>
               <span className="text-white hover:text-amber-300 px-3 py-2 text-sm font-light tracking-wide transition-colors cursor-pointer">
                 Nearby Activities
               </span>
@@ -81,9 +72,6 @@ export const Navigation = () => {
               </Link>
               <Link to="/amenities" className="block px-3 py-2 text-base font-light text-white hover:text-amber-300">
                 Amenities
-              </Link>
-              <Link to="/gallery" className="block px-3 py-2 text-base font-light text-white hover:text-amber-300">
-                About
               </Link>
               <Link to="/booking" className="block px-3 py-2 text-base font-light text-white hover:text-amber-300">
                 FAQ
