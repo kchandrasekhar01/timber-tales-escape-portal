@@ -223,7 +223,7 @@ const NearbyActivities = () => {
         <div className="max-w-7xl mx-auto">
           {/* Introduction */}
           <div className="text-center mb-12 lg:mb-16 px-4">
-            <p className="text-base lg:text-lg text-gray-700 max-w-5xl mx-auto leading-relaxed font-light">
+            <p className="text-base lg:text-xl text-gray-700 max-w-5xl mx-auto leading-relaxed font-regular">
               Welcome to the heart of the <strong>Smoky Mountains</strong>—your perfect destination for family fun, outdoor adventures, and unforgettable experiences! Pigeon Forge, Gatlinburg, and Sevierville offer an array of exciting attractions and activities for everyone. Check out some of the top things to do during your stay!
             </p>
           </div>
