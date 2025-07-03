@@ -10,14 +10,6 @@ const AmenitiesPage = () => {
       {/* Hero Section - matching other pages */}
       <section className="pt-24 pb-16 px-4 relative bg-black">
         <div className="relative z-10 max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-6xl font-bold text-white mb-4 tracking-wide">
-              AMENITIES
-            </h1>
-            <p className="text-xl text-white/90">
-              Everything you need for the perfect mountain getaway
-            </p>
-          </div>
         </div>
       </section>
       
