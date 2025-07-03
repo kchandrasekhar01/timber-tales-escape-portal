@@ -69,16 +69,16 @@ const NearbyActivities = () => {
         {
           name: "Anakeesta",
           description: "Aerial adventure park with gondola rides, ziplining, treetop walks, and shops."
-        },
-        {
-          name: "Ober Mountain",
-          description: "Mountain coaster, skiing (in winter), and aerial tramway."
         }
       ]
     },
     {
       category: "Attractions & Entertainment",
       items: [
+        {
+          name: "Ober Mountain",
+          description: "Mountain coaster, skiing (in winter), and aerial tramway."
+        },
         {
           name: "Ripley's Aquarium of the Smokies",
           description: "Highly rated, with a shark tunnel and penguin encounters."
