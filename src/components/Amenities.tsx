@@ -1,48 +1,58 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Waves, Film, Gamepad2, Utensils, Wifi, Car, Snowflake, Wind } from "lucide-react";
+import { Utensils, Wifi, Waves, Flame, Baby, Bed, ChefHat } from "lucide-react";
 
 export const Amenities = () => {
   const amenities = [
     {
+      icon: <Utensils className="w-8 h-8 text-gray-700" />,
+      title: "Kitchen",
+      description: "Fully equipped kitchen with modern appliances and everything you need to cook"
+    },
+    {
+      icon: <Wifi className="w-8 h-8 text-gray-700" />,
+      title: "High Speed Wifi",
+      description: "Stay connected with reliable high-speed internet throughout the cabin"
+    },
+    {
+      icon: <Waves className="w-8 h-8 text-gray-700" />,
+      title: "Laundry",
+      description: "Full-size washer and dryer for your convenience during your stay"
+    },
+    {
       icon: <Waves className="w-8 h-8 text-blue-600" />,
-      title: "Indoor Swimming Pool",
-      description: "Private heated indoor pool for year-round enjoyment"
+      title: "Heated Pool",
+      description: "Private heated indoor pool for year-round swimming enjoyment"
     },
     {
       icon: <Waves className="w-8 h-8 text-teal-600" />,
-      title: "Hot Tub Spa",
-      description: "Relax in our luxurious outdoor hot tub with mountain views"
+      title: "Hot Tub",
+      description: "Relax and unwind in our luxurious hot tub with stunning mountain views"
     },
     {
-      icon: <Film className="w-8 h-8 text-red-600" />,
-      title: "Private Movie Theatre",
-      description: "Cinema-style seating for the ultimate movie experience"
+      icon: <ChefHat className="w-8 h-8 text-orange-600" />,
+      title: "BBQ Grill",
+      description: "Outdoor grilling station perfect for family barbecues and gatherings"
     },
     {
-      icon: <Gamepad2 className="w-8 h-8 text-purple-600" />,
-      title: "Game Room",
-      description: "Arcade games and entertainment for all ages"
+      icon: <Flame className="w-8 h-8 text-red-600" />,
+      title: "Fireplaces",
+      description: "Cozy fireplaces throughout the cabin for warmth and ambiance"
     },
     {
-      icon: <Utensils className="w-8 h-8 text-orange-600" />,
-      title: "Outdoor BBQ Deck",
-      description: "Spacious balcony with BBQ grill and mountain views"
+      icon: <Flame className="w-8 h-8 text-orange-500" />,
+      title: "Fire Table",
+      description: "Outdoor fire table for evening gatherings under the stars"
     },
     {
-      icon: <Wifi className="w-8 h-8 text-green-600" />,
-      title: "High-Speed WiFi",
-      description: "Stay connected with reliable internet throughout"
+      icon: <Bed className="w-8 h-8 text-purple-600" />,
+      title: "Linens",
+      description: "Premium quality linens and towels provided for all guests"
     },
     {
-      icon: <Car className="w-8 h-8 text-gray-600" />,
-      title: "Private Parking",
-      description: "Convenient parking for multiple vehicles"
-    },
-    {
-      icon: <Snowflake className="w-8 h-8 text-blue-500" />,
-      title: "Climate Control",
-      description: "Central heating and air conditioning for comfort"
+      icon: <Baby className="w-8 h-8 text-pink-600" />,
+      title: "Baby Gear",
+      description: "High chairs, pack-n-plays, and other essentials for traveling with little ones"
     }
   ];
 
@@ -51,14 +61,27 @@ export const Amenities = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-light text-gray-900 mb-6 tracking-wide">
-            Luxury Amenities
+            Cabin Amenities
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
-            Experience the perfect blend of comfort and adventure with our premium amenities designed for unforgettable mountain getaways
+            Everything you need for a perfect mountain getaway, from modern conveniences to luxury comforts
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
+          {amenities.map((amenity, index) => (
+            <div key={index} className="text-center">
+              <div className="mb-4 flex justify-center">
+                {amenity.icon}
+              </div>
+              <h3 className="text-lg font-light text-gray-900 tracking-wide">
+                {amenity.title}
+              </h3>
+            </div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {amenities.map((amenity, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md bg-white">
               <CardContent className="p-8 text-center">
