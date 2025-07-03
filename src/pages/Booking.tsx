@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -49,13 +48,7 @@ const Booking = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 relative">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/e488a946-dd2e-453d-a5f9-27f33be14854.png')`
-          }}
-        />
+      <section className="pt-24 pb-16 px-4 relative bg-black">
         <div className="relative z-10 max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-6xl font-bold text-white mb-4 tracking-wide">
