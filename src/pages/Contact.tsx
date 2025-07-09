@@ -106,9 +106,6 @@ const Contact = () => {
               </CardContent>
             </Card>
           </div>
-        
-     
-    
   );
 };
 
