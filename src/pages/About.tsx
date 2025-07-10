@@ -75,7 +75,7 @@ const About = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white/70 backdrop-blur-sm text-center">
               <CardHeader>
                 <Users className="w-12 h-12 text-green-600 mx-auto mb-2" />
-                <CardTitle>Sleeps 12</CardTitle>
+                <CardTitle>Sleeps 14</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">Perfect for large families and groups</p>
@@ -105,7 +105,7 @@ const About = () => {
                 <ul className="space-y-2 text-gray-600">
                   <li>• Private heated swimming pool</li>
                   <li>• Dedicated movie theatre with cinema seating</li>
-                  <li>• Game room with arcade games</li>
+                  <li>• Game room with poker table & arcade games</li>
                   <li>• High-speed WiFi throughout</li>
                   <li>• Premium sound system</li>
                 </ul>
@@ -135,15 +135,19 @@ const About = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-lg">
                   <div>
                     <strong>Dollywood</strong><br />
-                    <span className="opacity-75">5 minutes drive</span>
+                    <span className="opacity-75">10 minutes drive</span>
                   </div>
                   <div>
                     <strong>The Island</strong><br />
-                    <span className="opacity-75">3 minutes drive</span>
+                    <span className="opacity-75">5 minutes drive</span>
                   </div>
                   <div>
-                    <strong>Downtown Pigeon Forge</strong><br />
-                    <span className="opacity-75">2 minutes drive</span>
+                    <strong>Gatlinburg</strong><br />
+                    <span className="opacity-75">20 minutes drive</span>
+                  </div>
+                  <div>
+                    <strong>Great Smoky Mountains National Park</strong><br />
+                    <span className="opacity-75">25 minutes drive</span>
                   </div>
                 </div>
               </CardContent>
