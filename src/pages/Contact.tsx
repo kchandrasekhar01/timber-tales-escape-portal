@@ -24,6 +24,7 @@ const Contact = () => {
 
       {/* Contact Cards Section */}
       <section className="py-16 px-4">
+        <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white/70 backdrop-blur-sm">
               <CardContent className="p-8">
@@ -106,6 +107,9 @@ const Contact = () => {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+    </div>
   );
 };
 
