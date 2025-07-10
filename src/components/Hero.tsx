@@ -20,12 +20,12 @@ export const Hero = () => {
         />
         
         {/* Words positioned at bottom of image */}
-        <div className="absolute bottom-8 left-0 right-0 z-10">
+        <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-0 right-0 z-10">
           <div className="max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
               {features.map((feature, index) => (
                 <div key={index} className="text-center">
-                  <h3 className="text-3xl font-bold text-white tracking-wide drop-shadow-lg">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-wide drop-shadow-lg">
                     {feature.title}
                   </h3>
                 </div>

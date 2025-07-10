@@ -3,49 +3,97 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// Import images using dynamic imports
+// Import images from public folder
 const images = [
+  '/Ridgetop 3031 Main-4000.jpg',
+  '/Ridgetop 3031 Upper-4000.jpg',
+  '/Ridgetop 3031 Lower-4000.jpg',
+  '/3031 Ridgetop Resort 003-4000.jpg',
+  '/3031 Ridgetop Resort 004-4000.jpg',
+  '/3031 Ridgetop Resort 005-4000.jpg',
+  '/3031 Ridgetop Resort 008-4000.jpg',
+  '/3031 Ridgetop Resort 010-4000.jpg',
+  '/3031 Ridgetop Resort 011-4000.jpg',
+  '/3031 Ridgetop Resort 012-4000.jpg',
+  '/3031 Ridgetop Resort 013-4000.jpg',
+  '/3031 Ridgetop Resort 018-4000.jpg',
+  '/3031 Ridgetop Resort 020-4000.jpg',
+  '/3031 Ridgetop Resort 022-4000.jpg',
+  '/3031 Ridgetop Resort 023-4000.jpg',
+  '/3031 Ridgetop Resort 025-4000.jpg',
+  '/3031 Ridgetop Resort 027-4000.jpg',
+  '/3031 Ridgetop Resort 030-4000.jpg',
+  '/3031 Ridgetop Resort 032-4000.jpg',
+  '/3031 Ridgetop Resort 033-4000.jpg',
+  '/3031 Ridgetop Resort 034-4000.jpg',
+  '/3031 Ridgetop Resort 035-4000.jpg',
+  '/3031 Ridgetop Resort 037-4000.jpg',
+  '/3031 Ridgetop Resort 039-4000.jpg',
+  '/3031 Ridgetop Resort 044-4000.jpg',
+  '/3031 Ridgetop Resort 050-4000.jpg',
+  '/3031 Ridgetop Resort 052-4000.jpg',
+  '/3031 Ridgetop Resort 055-4000.jpg',
+  '/3031 Ridgetop Resort 056-4000.jpg',
+  '/3031 Ridgetop Resort 059-4000.jpg',
+  '/3031 Ridgetop Resort 061-4000.jpg',
+  '/3031 Ridgetop Resort 062-4000.jpg',
+  '/3031 Ridgetop Resort 065-4000.jpg',
+  '/3031 Ridgetop Resort 066-4000.jpg',
+  '/3031 Ridgetop Resort 069-4000.jpg',
+  '/3031 Ridgetop Resort 070-4000.jpg',
+  '/3031 Ridgetop Resort 071-4000.jpg',
+  '/3031 Ridgetop Resort 072-4000.jpg',
+  '/3031 Ridgetop Resort 073-4000.jpg',
+  '/3031 Ridgetop Resort 074-4000.jpg',
+  '/3031 Ridgetop Resort 075-4000.jpg',
+  '/3031 Ridgetop Resort 078-4000.jpg',
+  '/3031 Ridgetop Resort 082-4000.jpg',
+  '/3031 Ridgetop Resort 084-4000.jpg',
+  '/3031 Ridgetop Resort 085-4000.jpg',
+  '/3031 Ridgetop Resort 086-4000.jpg',
+  '/3031 Ridgetop Resort 089-4000.jpg',
+  '/3031 Ridgetop Resort 090-4000.jpg',
+  '/3031 Ridgetop Resort 091-4000.jpg',
+  '/3031 Ridgetop Resort 092-4000.jpg',
+  '/3031 Ridgetop Resort 095-4000.jpg',
+  '/3031 Ridgetop Resort 096-4000.jpg',
+  '/3031 Ridgetop Resort 097-4000.jpg',
+  '/3031 Ridgetop Resort 101-4000.jpg',
+  '/3031 Ridgetop Resort 105-4000.jpg',
+  '/3031 Ridgetop Resort 106-4000.jpg',
+  '/3031 Ridgetop Resort 107-4000.jpg',
+  '/3031 Ridgetop Resort 109-4000.jpg',
+  '/3031 Ridgetop Resort 110-4000.jpg',
+  '/3031 Ridgetop Resort 112-4000.jpg',
+  '/3031 Ridgetop Resort 115-4000.jpg',
+  '/3031 Ridgetop Resort 116-4000.jpg',
+  '/3031 Ridgetop Resort 117-4000.jpg',
+  '/3031 Ridgetop Resort 119-4000.jpg',
+  '/3031 Ridgetop Resort 120-4000.jpg',
+  '/3031 Ridgetop Resort 122-4000.jpg',
+  '/3031 Ridgetop Resort 124-4000.jpg',
+  '/3031 Ridgetop Resort 126-4000.jpg',
+  '/3031 Ridgetop Resort 132-4000.jpg',
+  '/3031 Ridgetop Resort 133-4000.jpg',
+  '/3031 Ridgetop Resort 136-4000.jpg',
+  '/3031 Ridgetop Resort 139-4000.jpg',
+  '/3031 Ridgetop Resort 144-4000.jpg',
+  '/3031 Ridgetop Resort 145-4000.jpg',
+  '/3031 Ridgetop Resort 146-4000.jpg',
+  '/3031 Ridgetop Resort 149-4000.jpg',
+  '/3031 Ridgetop Resort 150-4000.jpg',
   '/3031 Ridgetop Resort 151-4000.jpg',
-  '/3031 Ridgetop Resort 152-4000.jpg',
-  '/3031 Ridgetop Resort 153-4000.jpg',
-  '/3031 Ridgetop Resort 154-4000.jpg',
   '/3031 Ridgetop Resort 155-4000.jpg',
-  '/3031 Ridgetop Resort 156-4000.jpg',
   '/3031 Ridgetop Resort 157-4000.jpg',
-  '/3031 Ridgetop Resort 158-4000.jpg',
   '/3031 Ridgetop Resort 159-4000.jpg',
-  '/3031 Ridgetop Resort 160-4000.jpg',
   '/3031 Ridgetop Resort 161-4000.jpg',
   '/3031 Ridgetop Resort 162-4000.jpg',
   '/3031 Ridgetop Resort 163-4000.jpg',
   '/3031 Ridgetop Resort 164-4000.jpg',
-  '/3031 Ridgetop Resort 165-4000.jpg',
   '/3031 Ridgetop Resort 166-4000.jpg',
-  '/3031 Ridgetop Resort 167-4000.jpg',
-  '/3031 Ridgetop Resort 168-4000.jpg',
-  '/3031 Ridgetop Resort 169-4000.jpg',
-  '/3031 Ridgetop Resort 170-4000.jpg',
-  '/3031 Ridgetop Resort 171-4000.jpg',
-  '/3031 Ridgetop Resort 172-4000.jpg',
-  '/3031 Ridgetop Resort 173-4000.jpg',
   '/3031 Ridgetop Resort 174-4000.jpg',
-  '/3031 Ridgetop Resort 175-4000.jpg',
-  '/3031 Ridgetop Resort 176-4000.jpg',
-  '/3031 Ridgetop Resort 177-4000.jpg',
-  '/3031 Ridgetop Resort 178-4000.jpg',
-  '/3031 Ridgetop Resort 179-4000.jpg',
-  '/3031 Ridgetop Resort 180-4000.jpg',
-  '/3031 Ridgetop Resort 181-4000.jpg',
   '/3031 Ridgetop Resort 182-4000.jpg',
-  '/3031 Ridgetop Resort 183-4000.jpg',
   '/3031 Ridgetop Resort 184-4000.jpg',
-  '/3031 Ridgetop Resort 185-4000.jpg',
-  '/3031 Ridgetop Resort 186-4000.jpg',
-  '/3031 Ridgetop Resort 187-4000.jpg',
-  '/3031 Ridgetop Resort 188-4000.jpg',
-  '/Ridgetop 3031 Lower-4000.jpg',
-  '/Ridgetop 3031 Main-4000.jpg',
-  '/Ridgetop 3031 Upper-4000.jpg',
 ];
 
 export const Gallery = () => {
@@ -77,14 +125,14 @@ export const Gallery = () => {
   };
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
+    <section className="py-12 sm:py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-50">
       <div className="max-w-7xl mx-auto">
         {/* Gallery Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-wide">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 tracking-wide">
             Photo Gallery
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
             Explore every corner of Zara's Timber Tales through our stunning photo collection
           </p>
         </div>
@@ -93,7 +141,7 @@ export const Gallery = () => {
         <div className="relative">
           {/* Main Display */}
           <div 
-            className="relative h-96 md:h-[500px] lg:h-[600px] mb-8 rounded-2xl overflow-hidden shadow-2xl"
+            className="relative h-64 sm:h-80 md:h-[500px] lg:h-[600px] mb-6 sm:mb-8 rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -104,17 +152,17 @@ export const Gallery = () => {
             />
             
             {/* Overlay with controls */}
-            <div className={`absolute inset-0 bg-black/20 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+            <div className={`absolute inset-0 bg-black/40 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center gap-4">
                 <Button
                   variant="ghost"
                   size="sm"
                   onClick={() => setIsPlaying(!isPlaying)}
-                  className="bg-white/20 backdrop-blur-sm text-white hover:bg-white/30"
+                  className="bg-black/70 backdrop-blur-sm text-white hover:bg-black/90 border border-white/30"
                 >
                   {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
                 </Button>
-                <span className="text-white text-sm font-medium">
+                <span className="text-white text-sm font-medium bg-black/70 px-3 py-1 rounded-full backdrop-blur-sm border border-white/30">
                   {currentIndex + 1} / {images.length}
                 </span>
               </div>
@@ -125,24 +173,24 @@ export const Gallery = () => {
               variant="ghost"
               size="sm"
               onClick={prevImage}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-all duration-200"
+              className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-black/70 backdrop-blur-sm text-white hover:bg-black/90 border border-white/30 transition-all duration-200"
             >
-              <ChevronLeft className="w-6 h-6" />
+              <ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6" />
             </Button>
             
             <Button
               variant="ghost"
               size="sm"
               onClick={nextImage}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-all duration-200"
+              className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-black/70 backdrop-blur-sm text-white hover:bg-black/90 border border-white/30 transition-all duration-200"
             >
-              <ChevronRight className="w-6 h-6" />
+              <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6" />
             </Button>
           </div>
 
           {/* Cover Flow Thumbnails */}
           <div className="relative">
-            <div className="flex justify-center items-center gap-4 overflow-hidden">
+            <div className="flex justify-center items-center gap-2 sm:gap-4 overflow-hidden">
               {images.map((image: string, index: number) => {
                 const distance = Math.abs(index - currentIndex);
                 const isActive = index === currentIndex;
@@ -162,10 +210,10 @@ export const Gallery = () => {
                     }`}
                     onClick={() => goToImage(index)}
                   >
-                    <div className={`w-24 h-16 md:w-32 md:h-20 lg:w-40 lg:h-24 rounded-lg overflow-hidden shadow-lg transition-all duration-300 ${
+                    <div className={`w-16 h-12 sm:w-24 sm:h-16 md:w-32 md:h-20 lg:w-40 lg:h-24 rounded-lg overflow-hidden shadow-lg transition-all duration-300 ${
                       isActive 
-                        ? 'ring-4 ring-amber-400 shadow-2xl' 
-                        : 'hover:ring-2 hover:ring-amber-200'
+                        ? 'ring-2 sm:ring-4 ring-amber-400 shadow-2xl' 
+                        : 'hover:ring-1 sm:hover:ring-2 hover:ring-amber-200'
                     }`}>
                       <img
                         src={image}
@@ -176,7 +224,7 @@ export const Gallery = () => {
                     
                     {/* Active indicator */}
                     {isActive && (
-                      <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-4 h-1 bg-amber-400 rounded-full"></div>
+                      <div className="absolute -bottom-1 sm:-bottom-2 left-1/2 transform -translate-x-1/2 w-3 h-1 sm:w-4 sm:h-1 bg-amber-400 rounded-full"></div>
                     )}
                   </div>
                 );
@@ -185,15 +233,15 @@ export const Gallery = () => {
           </div>
 
           {/* Dots Indicator */}
-          <div className="flex justify-center items-center gap-2 mt-8">
+          <div className="flex justify-center items-center gap-1 sm:gap-2 mt-6 sm:mt-8">
             {images.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToImage(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex 
-                    ? 'bg-amber-400 scale-125' 
-                    : 'bg-gray-300 hover:bg-gray-400'
+                    ? 'bg-amber-400 scale-125 shadow-lg' 
+                    : 'bg-gray-600 hover:bg-gray-500 border border-gray-400'
                 }`}
               />
             ))}

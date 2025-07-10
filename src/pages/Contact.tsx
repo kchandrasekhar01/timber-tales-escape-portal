@@ -49,7 +49,7 @@ const Contact = () => {
                 <p className="text-gray-700 mb-4">
                   For general inquiries, bookings, or detailed questions
                 </p>
-                <p className="text-lg font-semibold text-gray-900">ZarasTimberTales@edificepmg.com</p>
+                <p className="text-lg font-semibold text-gray-900">ZarasTimberTales@gmail.com</p>
                 <p className="text-sm text-gray-600">We typically respond within 2-4 hours</p>
               </CardContent>
             </Card>

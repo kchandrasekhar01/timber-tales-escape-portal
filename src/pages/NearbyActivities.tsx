@@ -289,7 +289,7 @@ const NearbyActivities = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button 
                     className="px-6 lg:px-8 py-3 lg:py-4 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors text-base lg:text-lg tracking-wide"
-                    onClick={() => window.open('https://calendar.google.com', '_blank')}
+                    onClick={() => window.open('/bookinglink', '_self')}
                   >
                     BOOK YOUR STAY
                   </button>

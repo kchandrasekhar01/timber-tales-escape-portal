@@ -164,7 +164,7 @@ const Booking = () => {
                   <Button 
                     size="lg" 
                     className="w-full border-2 border-white bg-transparent text-white hover:bg-white hover:text-black font-light tracking-wider py-4"
-                    onClick={() => window.open('https://calendar.google.com', '_blank')}
+                    onClick={() => window.open('/bookinglink', '_self')}
                   >
                     BOOK NOW
                   </Button>

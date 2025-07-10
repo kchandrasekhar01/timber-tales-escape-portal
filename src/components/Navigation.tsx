@@ -25,7 +25,7 @@ export const Navigation = () => {
           <div className="hidden md:block flex-1">
             <div className="flex items-center justify-center space-x-4">
               <Link to="/" className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors">
-                Home
+                Main
               </Link>
               <Link to="/about" className="text-white hover:text-amber-300 px-3 py-2 text-base font-light tracking-wide transition-colors">
                 Cabin
@@ -49,9 +49,11 @@ export const Navigation = () => {
           </div>
 
           <div className="hidden md:block">
-            <Button className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-black px-6 py-2 text-base font-light tracking-wider transition-all">
-              BOOK NOW
-            </Button>
+            <Link to="/bookinglink">
+              <Button className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-black px-6 py-2 text-base font-light tracking-wider transition-all">
+                BOOK NOW
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -92,9 +94,11 @@ export const Navigation = () => {
                 Contact
               </Link>
               <div className="px-3 py-2">
-                <Button className="w-full border-2 border-white bg-transparent text-white hover:bg-white hover:text-black font-light tracking-wider">
-                  BOOK NOW
-                </Button>
+                <Link to="/bookinglink">
+                  <Button className="w-full border-2 border-white bg-transparent text-white hover:bg-white hover:text-black font-light tracking-wider">
+                    BOOK NOW
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
