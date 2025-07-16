@@ -98,7 +98,7 @@ const BookingLink = () => {
                 </div>
                 <div className="p-3 sm:p-4 text-center">
                   <p className="text-lg sm:text-xl font-bold text-gray-900 tracking-wide">
-                    SAVE UPTO 15% WHEN BOOKING DIRECT
+                    SAVE UPTO 15% ON PLATFORM FEES WHEN BOOKING DIRECT WITH US
                   </p>
                 </div>
                 {tabs[activeTab].useIframe ? (
