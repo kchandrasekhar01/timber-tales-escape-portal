@@ -12,7 +12,7 @@ const BookingLink = () => {
       id: 0,
       name: "Direct Booking",
       logo: "🏠",
-      iframeSrc: "https://zaratimbertales.hosted.ownerrez.com/zaras-timer-tales-orp5b6c48dx",
+      iframeSrc: "https://zaratimbertales.hosted.ownerrez.com/zaras-timber-tales-orp5b6c48dx",
       description: "Book directly for the best rates and instant confirmation",
       useIframe: true
     },
