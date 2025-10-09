@@ -12,7 +12,7 @@ const BookingLink = () => {
       id: 0,
       name: "Direct Booking",
       logo: "🏠",
-      iframeSrc: "https://ownerrez.com/widget/embed/3031-ridgetop-resort",
+      iframeSrc: "https://zarastimbertales.hosted.ownerrez.com/zaras-timber-tales-orp5b6c48dx",
       description: "Book directly for the best rates and instant confirmation",
       useIframe: true
     },
@@ -98,7 +98,7 @@ const BookingLink = () => {
                 </div>
                 <div className="p-3 sm:p-4 text-center">
                   <p className="text-lg sm:text-xl font-bold text-gray-900 tracking-wide">
-                    SAVE UPTO 15% WHEN BOOKING DIRECT
+                    SAVE UPTO 15% ON PLATFORM FEES WHEN BOOKING DIRECT WITH US
                   </p>
                 </div>
                 {tabs[activeTab].useIframe ? (
