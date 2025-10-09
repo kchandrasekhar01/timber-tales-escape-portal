@@ -75,7 +75,7 @@ const About = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-0 bg-white/70 backdrop-blur-sm text-center">
               <CardHeader className="pb-3">
                 <Users className="w-8 h-8 sm:w-12 sm:h-12 text-green-600 mx-auto mb-2" />
-                <CardTitle className="text-sm sm:text-base">Sleeps 14</CardTitle>
+                <CardTitle className="text-sm sm:text-base">Sleeps 18</CardTitle>
               </CardHeader>
               <CardContent className="pt-0">
                 <p className="text-gray-600 text-xs sm:text-sm">Perfect for large families and groups</p>
