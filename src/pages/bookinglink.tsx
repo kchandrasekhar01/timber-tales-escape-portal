@@ -28,7 +28,7 @@ const BookingLink = () => {
       id: 2,
       name: "VRBO",
       logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Vrbo.svg",
-      externalUrl: "https://www.vrbo.com/4372035?referrerId=HOT.HIS.Share.Landed.Copy_Link",
+      externalUrl: "https://www.vrbo.com/4941615",
       description: "Book through VRBO's vacation rental platform",
       useIframe: false
     }
