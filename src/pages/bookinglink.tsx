@@ -208,7 +208,7 @@ const BookingLink = () => {
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                   <Button 
                     className="bg-black text-white hover:bg-gray-800"
-                    onClick={() => window.open('tel:+15103046560', '_self')}
+                    onClick={() => window.open('tel:+19253310789', '_self')}
                   >
                     Call Us
                   </Button>
