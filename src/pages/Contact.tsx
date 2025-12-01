@@ -35,7 +35,7 @@ const Contact = () => {
                 <p className="text-gray-700 mb-4">
                   For immediate assistance or urgent matters during your stay
                 </p>
-                <p className="text-lg font-semibold text-gray-900">+1 (510) 304-6560</p>
+                <p className="text-lg font-semibold text-gray-900">+1 (925) 331-0789</p>
                 <p className="text-sm text-gray-600">Available 24/7</p>
               </CardContent>
             </Card>
@@ -93,7 +93,7 @@ const Contact = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button 
                     className="px-6 py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-                    onClick={() => window.open('tel:+15103046560', '_self')}
+                    onClick={() => window.open('tel:+19253310789', '_self')}
                   >
                     Call Us
                   </button>
