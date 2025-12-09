@@ -12,7 +12,7 @@ const BookingLink = () => {
       id: 0,
       name: "Direct Booking",
       logo: "🏠",
-      iframeSrc: "https://zarastimbertales.hosted.ownerrez.com/zaras-timber-tales-orp5b6c48dx",
+      iframeSrc: "https://booking.hospitable.com/widget/a08bc27c-5b77-44cf-b737-64b5f35d0d28/2085944",
       description: "Book directly for the best rates and instant confirmation",
       useIframe: true
     },
